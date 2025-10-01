@@ -19,11 +19,13 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\item\item.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\player\player.cpp" />
     <ClCompile Include="src\room\room.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\item\item.h" />
     <ClInclude Include="src\log.hpp" />
     <ClInclude Include="src\player\player.hpp" />
     <ClInclude Include="src\room\room.hpp" />

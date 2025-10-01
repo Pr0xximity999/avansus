@@ -10,6 +10,9 @@
     <Filter Include="src\room">
       <UniqueIdentifier>{f4563f8f-c0a5-4ba8-b374-aaddfb9f657c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\item">
+      <UniqueIdentifier>{9d518f41-c6a5-49f7-8f81-456142c6fd3b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\player\player.hpp">
@@ -21,6 +24,9 @@
     <ClInclude Include="src\log.hpp">
       <Filter>src</Filter>
     </ClInclude>
+    <ClInclude Include="src\item\item.h">
+      <Filter>src\item</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\player\player.cpp">
@@ -31,6 +37,9 @@
     </ClCompile>
     <ClCompile Include="src\main.cpp">
       <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\item\item.cpp">
+      <Filter>src\item</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
