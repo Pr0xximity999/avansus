@@ -6,4 +6,4 @@ set(CMAKE_CXX_STANDARD 23)
 add_executable(workshop src/main.cpp
         src/item/item.cpp
         src/item/item.h
-        src/SlowPrinter.cpp)
+        src/ScreenUtils.cpp)
