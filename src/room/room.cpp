@@ -52,8 +52,8 @@ void Room::showMap() {
 /// Getter for all Rooms connected to current Room
 /// </summary>
 /// <returns></returns>
-std::vector<Room&> Room::getConnectedRooms() {
-	auto print = [](Room& r) {std::cout << r.getName() << ' ';};
+	void Room::getConnectedRooms() {
+	auto print = [](Room r) {std::cout << r.getName() << ' ';};
 
-	std::for_each(Room::connectedRooms.cbegin(), Room::connectedRooms.cend(), print);
-}
+		std::for_each(Room::connectedRooms.cbegin(), Room::connectedRooms.cend(), print);
+	}
