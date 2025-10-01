@@ -12,9 +12,17 @@ class Item {
     std::string _description;
     int _charges;
     std::function<void()> _useFunc;
+    bool _destroyed = false;
 
 public:
-    // Default constructor
+
+    /**
+     * Creates a new item object
+     * @param name The item's name
+     * @param description The item's description
+     * @param charges The number of charges that the item has
+     * @param useFunc The function that runs when you use it
+     */
     Item(const std::string &name, const std::string &description, int charges, const std::function<void()> &useFunc);
 
     // Copy constructor
@@ -39,12 +47,32 @@ public:
         return *this;
     }
 
+
+    /**
+     * Returns the item's name
+     * @return
+     */
     std::string GetName();
+
+
+    /**
+     * Returns the item's description
+     * @return
+     */
     std::string GetDescription() const;
     int GetCharges() const;
 
+
+    /**
+     * Use the item, destroys it if it runs out of charges
+     */
     void Use();
-    void Destroy() const;
+
+
+    /**
+     * Destroys the item.
+     */
+    void Destroy();
 };
 
 

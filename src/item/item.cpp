@@ -26,6 +26,12 @@ int Item::GetCharges() const {
 }
 
 void Item::Use() {
+    // Don't use the item if it is destroyed
+    if (_destroyed) {
+        std::cout << _name << " is destroyed.\n";
+        return;
+    }
+
     // Use item, remove a charge
     std::cout << "Using" << _name;
     _useFunc();
@@ -38,6 +44,7 @@ void Item::Use() {
     }
 }
 
-void Item::Destroy() const{
+void Item::Destroy(){
     std::cout << _name << " has been destroyed.\n";
+    _destroyed = true;
 }
