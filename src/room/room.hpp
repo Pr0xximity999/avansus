@@ -14,9 +14,9 @@ public:
 	std::string getName();
 	std::string getDescription();
 	std::vector<std::string> getExits();
-	std::vector<Item> getItems();
+	//std::vector<Item> getItems();
 	void showMap();
-	std::vector<Room&> getConnectedRooms();
+	void getConnectedRooms();
 };
 
 #endif // ROOM_HPP
